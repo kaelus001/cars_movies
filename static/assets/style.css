@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.9rem;
+    background-color: var(--darkgray-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 5.5rem;
+}
+
+h3 {
+    font-size: 5rem;
+}
+
+h4 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 4rem;
+}
+
+h6 {
+    font-size: 3.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.classic-bg {
+    color: var(--primary-color);
+}
+
+.darkgray-bg {
+    background-color: var(--invertido-color);
+}
+
+.black-text {
+    color: var(--black-color);
+}
+
+.icon-home {
+    height: 45px;
+    width: 50px;
+}
+
+.main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: 0.1rem solid var(--gray-color);
+    background-color: var(--primary-color);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu h1 {
+    font-size: 2.3rem;
+    color: var(--black-color);
+}
+
+.menu h1 a {
+    color: inherit;
+    font-weight: 900;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: var(--black-color);
+    position: relative;
+
+}
+
+.menu ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: var(--black-color);
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li a:hover {
+    background-color: var(--gray-color);
+}
+
+.menu ul li a:hover::after {
+    width: 50%;
+    left: 25%;
+}
+
+.menu-spacing {
+    height: 6.5rem;
+}
+
+.home-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.home-img img {
+    width: 100%;
+}
+
+.about-content {
+    padding-top: var(--gap);
+    padding-bottom: var(--gap);
+}
+
+.about-text {
+    padding-top: var(--gap);
+    padding-bottom: var(--gap);
+}
+
+.about-img img {
+    width: 100%;
+}
+
+.grid-movies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.intro-img {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cars_movies {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.contact-content {
+    padding-top: var(--gap);
+    padding-bottom: var(--gap);
+}
+
+.contact-text {
+    padding-top: var(--gap);
+    padding-bottom: var(--gap);
+}
+
+.contact-form {
+    margin-top: var(--gap);
+}
+
+.contact-form input[type='text'],
+.contact-form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    margin-bottom: var(--gap);
+    background-color: var(--darkgray-color);
+    color: var(--primary-color);
+    border: none;
+    border-bottom: 0.2rem solid var(--gray-color);
+}
+
+.contact-form input[type='submit'] {
+    font-size: 1.8rem;
+    background-color: var(--gray-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.contact-form input[type='submit']:hover {
+    background-color: var(--black-color);
+    color: var(--primary-color);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    text-align: center;
+}
+
+.intro-img img.intro-img svg {
+    width: 100%;
+    height: auto;
+}
+.grid-movies {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;;
+}
+
+
+.grid-movies article {
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.intro-img.home-img {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; /* Controla la proporción de aspecto de la imagen (altura/ancho) */
+    overflow: hidden;
+
+}
+
+.intro-img.home-img img.cars_movies {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el tamaño de la imagen sin deformarla */
+}
+
+/* Estilos para los labels */
+label {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+  
+  /* Estilos para los botones */
+button {
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    width: 200px; /* Ajusta el ancho del botón */
+    height: 50px; /* Ajusta la altura del botón */
+}

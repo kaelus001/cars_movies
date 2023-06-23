@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Movies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/assets/style.css">
+    <link rel="stylesheet" type="text/css" href="static/assets/root.css">
+    <link rel="stylesheet" type="text/css" href="static/assets/srollbar.css">
+    <link rel="stylesheet" type="text/css" href="static/assets/media.css">
+   
+
+    <style>
+        input::placeholder {
+            background-color: transparent;
+        }
+
+        .footer {
+            border-top-width: 1px; 
+            border-bottom-width: 1px;
+            padding: 10px 5px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .footer-content {
+                flex-direction: column;
+            }
+        }
+
+        .footer-content {
+            color: white;
+            font-size: 12px;
+            border: 1px solid white;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .footer-content:before {
+            content: '';
+            position: absolute;
+            bottom: -3px; 
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: white;
+        }
+        .footer-content p:nth-child(3) {
+            color: #00BFFF;
+        }
+    </style>
+    
+</head>
+
+<body class="classic-bg">
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    <aside class="menu">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false;" style="margin-top: 5px; margin-bottom: 10px;">
+                <a href="#home">
+                    <img class="icon-home" style="margin-bottom: 10px; margin-top: 10px; border-radius: 15px;" src="static/assets/img/calabera.png" alt="kaelus logo">
+                </a>
+            </h1>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li><a href="static/top/top.html" style="font-size: 30px;">Top 3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <div id="home" class="menu-spacing"></div>
+    <section class="section classic-bg">
+        <div class="home-content">
+            <h2>Cars Movies</h2>
+            <p>
+                This place is suitable if you are looking to have a good time enjoying car movies, we have chosen some but you can always recommend some.
+                Make the popcorn, your favorite drink, get comfortable and enjoy the gas and burned tires. It is no place for Tesla fans (do not be offended, these vehicles make a heavenly sound).
+            </p>
+            <div class="home-img">
+                <img src="static\assets\img\burnout.jpg" alt="Burnout car.">
+            </div>
+        </div>
+    </section>
+
+    
+    <div id="movies" class="menu-spacing"></div>
+
+    <section class="section classic-bg">
+        <h2 style="text-align: center;">Movies</h2>
+        <div class="grid-movies">
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Gone in 60 Seconds</h3>
+                <div class="intro-img">
+                    <a href="https://sflix.to/movie/free-gone-in-sixty-seconds-hd-17895">
+                        <img class="cars_movies" src="static\assets\img\60_segundos.jpg" alt="Banner of the film 60 Seconds" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2000</h1>
+                <h4 class="synopsis" style="font-size: 24px;" >Synopsis</h4>
+                <p class="text-synopsis contenido">Randall "Memphis" Raines, a reformed criminal, must revert to his expertise in car theft to save his endangered brother. Tasked with stealing 50 cars under a contract, Memphis, a revered figure in the world of motor theft, possesses unmatched skills in bypassing locks and alarms.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Baby Driver</h3>
+                <div class="intro-img">
+                    <a href="https://sflix.to/movie/free-baby-driver-hd-19604">
+                        <img class="cars_movies" src="static\assets\img\baby_driver.jpg" alt="Banner of the film Baby Driver" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2017</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">Baby, a skilled driver, relies on a personal soundtrack to excel in his criminal endeavors. Meeting his dream girl, he seeks a chance for a lawful existence. However, coerced into serving a dangerous gang leader, Baby must fight for his life, love, and freedom when a doomed coup unfolds.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Born to Race</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-born-to-race-hd-7279">
+                        <img class="cars_movies" src="static\assets\img\born_to_race.jpg" alt="Banner of the film Born to Race" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2011</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">Danny Krueger, a defiant driver, is sent to live with his ex-NASCAR racer father in a small town following an illegal street race accident. To join Drags NHRA High School, Danny must turn to his father for assistance.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Cars</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-cars-hd-19334">
+                        <img class="cars_movies" src="static\assets\img\cars.jpg" alt="Banner of the film Cars" style="width: 300px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2006</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">Aspiring racing champ Lightning McQueen's dreams are derailed when he takes an unplanned detour on Route 66. In a forgotten community, he learns valuable life lessons that humble his arrogant attitude and remind him of what truly matters.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Cars 2</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-cars-2-hd-19254">
+                        <img class="cars_movies" src="static\assets\img\cars_2.jpg" alt="Banner of the film Cars 2" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2011</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">Lightning McQueen and his friend Mater embark on a global journey for the first World Championship. In Tokyo, Mater becomes a secret spy, leading them to Paris and London. Their adventure continues in Porto Corsa, Italy, but Mater's spy work and McQueen's race against top competitors make it challenging to enjoy the Italian Riviera's pleasures.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Cars 3</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-cars-3-hd-19240">
+                        <img class="cars_movies" src="static\assets\img\cars_3.jpg" alt="Banner of the film Cars 3" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2017</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">After being overshadowed by faster racers, Lightning McQueen seeks to reignite his career. With the aid of racing mechanic Cruz Ramirez and inspiration from the late Fabulous Hudson Hornet, he sets out to prove himself. Facing unexpected challenges and twists, McQueen must prove his worth on the grand stage of the Piston Cup to show that he's far from finished.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Death Race</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-death-race-hd-18673">
+                        <img class="cars_movies" src="static\assets\img\death_race.jpg" alt="Banner of the film Death Race" style="width: 250px; height: 250px;" >
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2008</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">In the world of DEATH RACE, prisoners, a bloodthirsty audience, and a stunning arena collide. Jensen Ames, a skilled survivor in a post-apocalyptic desert, is wrongly accused of a heinous crime. Forced by the island's director, he becomes Frankenstein, a seemingly invincible racer. With a masked face and a weaponized car, he must overcome obstacles and adversaries to win the twisted game of survival.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Fast & Furious</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-fast-and-furious-hd-52979">
+                        <img class="cars_movies" src="static\assets\img\fast_&_furious.jpg" alt="Banner of the film Fast & Furious" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2001</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">In an effort to apprehend a gang of truck thieves, the police send Brian, a young and charming operative, undercover into the illegal racing scene. There, he encounters Dominic, the renowned king of the racing world and prime suspect. However, complications arise when Brian develops feelings for Dominic's sister, making his mission more challenging than expected.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">2 Fast & 2 Furious</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-2-fast-2-furious-hd-52978">
+                        <img class="cars_movies" src="static\assets\img\fast_&_furious2.jpg" alt="Banner of the film 2 Fast & 2 Furious" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2003</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">Former FBI agent Brian O'Connor, seeking redemption, seizes his last opportunity in Miami. Tasked with infiltrating an international money laundering cartel led by Carter Verone, he teams up with childhood friend Roman Pearce. As the clock ticks and the stakes rise, O'Connor must navigate the world of illegal street racing once again to bring down the dangerous criminal and earn his badge back.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Fast & Furious: Tokio Drift</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-the-fast-and-the-furious-tokyo-drift-hd-14342">
+                        <img class="cars_movies" src="static\assets\img\fast_&_furious3 tokio drift.jpg" alt="Banner of the film Fast & Furious: Tokio Drift" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2006</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">Shaun Boswell, an outsider in high school, finds solace in the world of illegal racing. Facing the threat of imprisonment, he is sent to Japan to live with his military officer father. In Tokyo, he encounters drift racing, a gravity-defying challenge dominated by the Yakuza. To repay a debt, Shaun must navigate the dangerous underworld and put his life on the line.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Ford vs Ferrari</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-ford-v-ferrari-hd-41453">
+                        <img class="cars_movies" src="static\assets\img\ford_vs_ferrari.jpg" alt="Banner of the film Ford vs Ferrari" style="width: 250px; height: 300px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2019</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">An eccentric American team, led by Carroll Shelby and driver Ken Miles, is tasked by Henry Ford II and Lee Iacocca to create a new car and challenge Ferrari's dominance in the 1966 Le Mans World Championship. With determination and innovation, they strive to build a winning vehicle from scratch, aiming to achieve a historic victory on the racing circuit.</p>
+            </article>
+            <article>
+                <h3 class="title-movies"style="font-size: 36px;">Italian Job</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-the-italian-job-hd-18714">
+                        <img class="cars_movies" src="static\assets\img\italian_job.jpg" alt="Banner of the film Italian Job" style="width: 300px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2003</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">Led by mastermind Charlie Croker (Mark Wahlberg), a gang of thieves, including veteran thief Donald Sutherland, plans a heist in Venice. However, their betrayal leads them to devise a new plan: to infiltrate and manipulate the Los Angeles traffic control system, causing chaos and creating the largest traffic jam ever, in order to recover their stolen loot.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Logan Lucky</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-logan-lucky-hd-18870">
+                        <img class="cars_movies" src="static\assets\img\logan_lucky.jpg" alt="Banner of the film Logan Lucky" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2017</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">Unemployed Jimmy, war veteran Clyde, and car-obsessed Mellie, three determined brothers, aim to break their family curse by stealing the vault at Charlotte Motor Speedway during the Coca-Cola 600 race. Their plan requires the help of incarcerated demolition expert Joe Bang. The only hitch: Joe is in jail.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Need for Speed</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-need-for-speed-hd-17376">
+                        <img class="cars_movies" src="static\assets\img\need_for_speed.jpg" alt="Banner of the film Need for Speed" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2014</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">Tobey, a skilled underground racer, is imprisoned after his friend's death in a race. Upon his release, he seeks revenge. This film is an adaptation of the video game series with the same name, featuring Tobey's pursuit of justice and his passion for modifying cars in his own garage.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Ronin</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-ronin-hd-18059">
+                        <img class="cars_movies" src="static\assets\img\ronin.jpg" alt="Banner of the film Ronin" style="width: 300px; height: 300px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">1998</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">In Europe, skilled mercenaries known as "Ronin" take on dangerous secret missions for the highest bidder. Unaware of their employer's true intentions, their sole objective is to locate a mysterious suitcase. These men without honor navigate a treacherous world where loyalty is uncertain and the mission's true purpose remains hidden.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Speed Racer</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-speed-racer-hd-16702">
+                        <img class="cars_movies" src="static\assets\img\speed_racer.jpg" alt="Banner of the film Speed Racer" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2008</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">Speed Racer, a talented and daring racing driver, idolizes his late brother and races to support his family's car business. When he refuses a tempting offer from Royalton Industries, he uncovers a sinister secret: races are being manipulated by heartless entrepreneurs. To save his family and the sport, Speed must win the dangerous game set by Royalton.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Taxi</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-taxi-hd-18324">
+                        <img class="cars_movies" src="static\assets\img\taxi.jpg" alt="Banner of the film Taxi" style="width: 300px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">1998</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">Daniel, a pizza delivery man, fulfills his dream of getting a taxi license. However, an unexpected encounter with Emilien forces him into a challenging situation: they must join forces to stop a gang that is systematically robbing the country's banks if they want to keep Daniel's taxi license.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">The Cannonball Run</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-the-cannonball-run-hd-11713">
+                        <img class="cars_movies" src="static\assets\img\the_cannonball_run.jpg" alt="Banner of the film The Cannonball Run" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">1981</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">This popular 80s comedy revolves around a wild cross-country car race, uniting a diverse group of characters. With no rules or regulations, the objective is to travel from one coast of the United States to the other. The participants go to extreme lengths to win, employing all sorts of tricks to eliminate their rivals.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">The Transporter</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-the-transporter-hd-17799">
+                        <img class="cars_movies" src="static\assets\img\transporter.jpg" alt="Banner of the film Transporter" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2002</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">Former Special Forces operative, Frank Martin, leads a seemingly calm life as a "transporter" on the French Mediterranean. Following three strict rules, he moves goods, including humans, without asking questions. When hired for a routine delivery by an American named "Wall Street," Frank discovers his package is not what it seems, leading to unexpected dangers and a race against time.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Transporter 2</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-transporter-2-hd-18841">
+                        <img class="cars_movies" src="static\assets\img\transporter2.jpg" alt="Banner of the film Transporter 2" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2005</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">Ex-mercenary Frank Martin (Jason Statham) leads a totally different life in Miami, but he will have no choice but to return to action when a close family is kidnapped.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Herbie Rides Again</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-herbie-rides-again-hd-12456">
+                        <img class="cars_movies" src="static\assets\img\herbie_rides_again.jpg" alt="Banner of the film Herbie Riedes Again" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">1974</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">Alonzo Hawk, a ruthless property developer, aims to construct a massive shopping mall by acquiring downtown land. However, his plans are thwarted by Steinmetz, an elderly widow who refuses to sell her remaining lot. Hawk employs various deceitful tactics to obtain it, but the resourceful widow possesses a secret weapon: Herbie, the extraordinary Volkswagen.</p>
+            </article>
+            <article>
+                <h3 class="title-movies" style="font-size: 36px;">Herbie Fully Loaded</h3>
+                <div style="align-items: center;" class="intro-img">
+                    <a href="https://sflix.to/movie/free-herbie-fully-loaded-hd-17079">
+                        <img class="cars_movies" src="static\assets\img\herbie_fully_loaded.jpg" alt="Banner of the film Herbie Fully Loaded" style="width: 250px; height: 250px;">
+                    </a>
+                </div>
+                <h1 class="year" style="font-size: 14px;">2005</h1>
+                <h4 class="synopsis" style="font-size: 24px;">Synopsis</h4>
+                <p class="text-synopsis contenido">Maggie Peyton inherits Number 53, a spirited Volkswagen Beetle, and sets her sights on a NASCAR career. Despite her racing lineage, her overprotective father opposes her dreams. When he offers her a car, she chooses the worn-out '63 VW Bug, Herbie, over a newer Nissan. As Maggie embarks on her journey, she realizes Herbie has a unique agenda that could alter her future.</p>
+            </article>
+        </div>
+    </section>
+    
+
+    <form action="https://formspree.io/f/moqzgnnw" method="POST" class="section classic-bg">
+        <div id="contact" class="menu-spacing"></div>
+        <div class="home-content">
+            <h2 style="text-align: center;">Contact</h2>
+            <h1 style="text-align: center; font-size: 14px;" >If you have any suggestion send us a message</h1>
+        </div>
+        <div class="home-content contact-form">
+            <fieldset class="form-grid">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Your First Name" required style="text-align: center;">
+                </div>
+                <div class="form-group">
+                    <label for="surname">Surname</label>
+                    <input type="text" name="surname" id="surname" placeholder="Your Surname" required style="text-align: center;">
+                </div>
+                <div class="form-group" style="display: flex; flex-direction: column; align-items: center;">
+                    <label for="email" style="margin-bottom: 0.5rem; text-align: center;">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email" required style="background-color: transparent; height: 40px; color: var(--primary-color); text-align: center; border: none;">
+                </div>
+                <div class="form-group" style="display: flex; flex-direction: column; align-items: center;">
+                    <label for="message"style="margin-bottom: 0.5rem; text-align: center;">Message</label>
+                    <textarea style="resize: vertical; text-align: center;" name="mensagem" id="mensagem" cols="30" rows="10"
+                        placeholder="Your message" required></textarea>
+                </div>
+                <div style="text-align: right;" class="form-group full-width">
+                    <button type="submit">Send</button>
+                </div>
+            </fieldset>
+        </div>
+    </form>
+    <script>
+        // Obtener el formulario
+        var form = document.querySelector('form');
+    
+        // Restablecer los valores de los campos cuando se envíe el formulario
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Evitar el envío del formulario
+
+            // Enviar el formulario después de un breve retraso
+            setTimeout(function() {
+                form.submit();
+            }, 100);
+
+            // Restablecer los valores del formulario después de enviarlo
+            setTimeout(function() {
+                form.reset();
+            }, 200);
+        });
+    </script>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Cars Movies. All rights reserved.</p>
+            <p>This website is licensed under a <a href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</p>
+            <p>&nbsp;&nbsp;Author: Kaelus</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html> 
